@@ -1,0 +1,109 @@
+/* 初始化 */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* 包住游戏页面的div */
+.container {
+	width: 320px;
+	height: 480px;
+	background: url(../images/game_bg.jpg) no-repeat 0 0;
+	margin: 50px auto;
+	position: relative;
+}
+/* 分数 */
+.container>h1 {
+	color: white;
+	margin-left: 60px;
+}
+/* 倒计时那个条条 */
+.progress {
+	width: 180px;
+	height: 16px;
+	background: url(../images/progress.png) no-repeat 0 0;
+	position: absolute;
+	top: 66px;
+	left: 63px;
+}
+.container>.start{
+	width: 150px;
+	line-height: 35px;
+	background: linear-gradient(#e55c3d,#C50000);
+	border: none;
+	border-radius: 20px;
+	top: 320px;
+	left: 50%;
+	position: absolute;
+	margin-left: -75px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+.container>.rules{
+	width: 100%;
+	height: 25px;
+	background-color: #CCC;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	cursor: pointer;
+}
+/* 游戏规则 */
+.container>.rule {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* line-height: 50px; */
+	padding-top: 100px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+	box-sizing: border-box;
+}
+.rule>p{
+	line-height: 50px;
+	color: white;
+}
+.rule>a{
+	color: aqua;
+}
+/* 重新开始 */
+.container>.mask {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 100px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+	box-sizing: border-box;
+	padding-top: 200px;
+}
+.mask>h1{
+	color: #ff4500;
+	font-size: 40px;
+	text-shadow: 3px 3px #FFFFFF;
+}
+.mask>button{
+	width: 150px;
+	line-height: 35px;
+	background: linear-gradient(#74ACCF,#007DDC);
+	border: none;
+	border-radius: 20px;
+	top: 320px;
+	left: 50%;
+	position: absolute;
+	margin-left: -75px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+.wolfImage{
+	cursor: pointer;
+}
